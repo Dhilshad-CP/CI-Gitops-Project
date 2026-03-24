@@ -11,7 +11,7 @@ pipeline {
 
         stage('Docker Login') {
             steps {
-                sh 'echo "Bridgeskill100" | docker login -u Dhilshad --password-stdin'
+                sh 'echo "Bridgeskill100" | docker login -u dhilshad --password-stdin'
             }
         }
 
