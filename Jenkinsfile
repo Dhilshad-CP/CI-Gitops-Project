@@ -9,6 +9,12 @@ pipeline {
             }
         }
 
+        stage('Docker Login') {
+            steps {
+                sh 'echo "Bridgeskill100" | docker login -u Dhilshad --password-stdin'
+            }
+        }
+
         stage('Push Image') {
             steps {
                 sh 'docker push dhilshad/task22-app:${BUILD_NUMBER}'
