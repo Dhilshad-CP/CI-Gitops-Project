@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req,res)=>{
-res.send("Updated versions from CI/CD pipeline 🚀");
+res.send("Update versions from CI/CD pipeline 🚀");
 });
 
 app.listen(3000, ()=>{
